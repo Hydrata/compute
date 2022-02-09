@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7#z9pp1d6b3wmat1++-!x1&13p4!ti(-1fy-4)1jn%*s9f@ai*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["compute.hydrata.com"]
 
 
 # Application definition
