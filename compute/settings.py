@@ -117,5 +117,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.environ.get('STATIC_ROOT', '/opt/data/static_root/'),
-MEDIA_ROOT = os.environ.get('MEDIA_ROOT', '/opt/data/uploaded/'),
+STATIC_ROOT = os.environ.get('STATIC_ROOT', '/opt/data/static_root/')
+MEDIA_ROOT = os.environ.get('MEDIA_ROOT', '/opt/data/uploaded/')
