@@ -51,7 +51,7 @@ class ComputeViewSet(viewsets.ModelViewSet):
         print(os.getenv("ANUGA_ADMIN_PASSWORD"))
         subprocess.call(['whoami'])
         print(f'mpirun -np 1 /opt/venv/compute/bin/python {anuga_runfile} {os.getenv("ANUGA_ADMIN_USERNAME")} {os.getenv("ANUGA_ADMIN_PASSWORD")}')
-        subprocess.call(['mpirun', '-np', '1', '/opt/venv/compute/bin/python', anuga_runfile, os.getenv("ANUGA_ADMIN_USERNAME"), os.getenv("ANUGA_ADMIN_PASSWORD")])
+        subprocess.call(['mpirun', '-np', '1', '/opt/venv/compute/bin/python', anuga_runfile, os.getenv("ANUGA_ADMIN_USERNAME"), os.getenv("ANUGA_ADMIN_PASSWORD")], cwd=package_subdirectory)
         print('anuga_runfile done')
         # mpirun -np 8 /opt/venv/hydrata/bin/python /opt/hydrata/gn_anuga/run_code/run_anuga.py "test"
 
