@@ -24,7 +24,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='fallback_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["compute.hydrata.com"]
+ALLOWED_HOSTS = ["compute.hydrata.com", "localhost"]
 
 
 # Application definition
@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'compute_anuga',
 ]
 
 MIDDLEWARE = [
