@@ -24,7 +24,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='fallback_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["compute.hydrata.com", "localhost"]
+ALLOWED_HOSTS = ["compute1.hydrata.com", "localhost"]
 
 
 # Application definition
